@@ -1,0 +1,5 @@
+var updatingForm = $("#<%= dom_id(@comment.photo) %>_<%= dom_id(@comment) %>_form")
+
+var updatedComment = "<%= j(render @comment) %>"
+
+updatingForm.replaceWith(updatedComment)
